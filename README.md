@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is available on github [Create React App](https://github.com/AbdurahimBerdiyarov/houzing03).
+
+# can see the DEMO [Houzing03](https://netlify.com/AbdurahimBerdiyarov/houzing03).
 
 ## Available Scripts
 
