@@ -1,7 +1,8 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
-import { navbar } from '../../utils/navbar'
-import { Container, Link, Logo, Main, Wrapper, Section } from './style';
+import { navbar } from '../../utils/navbar';
+import { Button } from '../Generic/Button';
+import { Container,  Link,  Logo, Main, Wrapper, Section  } from './style';
 
 
 
@@ -15,8 +16,8 @@ export const Home = () =>  {
                 <Logo /> <h3>Houzing</h3>
             </Section>
             <Section>
-                {navbar.map(({ title, path, }, index) => {
-                    return (
+                {navbar.map(({ title, path, hidden }, index) => {
+                    return !hidden &&  (
                     <Link
                       className={({ isActive }) => isActive && 'active'} 
                       key={index} to={path}>
@@ -26,7 +27,7 @@ export const Home = () =>  {
                 })}
             </Section>
             <Section>
-                <button>Sign in</button>
+                <Button onClick={()=>navigate('/signin')} type={'dark'}>Sign in</Button>
             </Section>
 
          </Wrapper>
