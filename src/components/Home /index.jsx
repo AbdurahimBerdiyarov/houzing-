@@ -1,13 +1,13 @@
-import React from 'react';
-import { Input,} from '../Generic';
-import { Container } from './style';
+import React from "react";
+import { Input } from "../Generic";
+import { Container } from "../Home /style";
 
-export const Home = () =>  {
+export const Home = () => {
   return (
-  <Container>
-    <h1>Home</h1>
-    <Input  width={200} placeholder={"test"}/>
-  </Container>
+    <Container>
+      <h1>Home</h1>
+      <Input width={200} placeholder={"test"} />
+    </Container>
   );
 };
 

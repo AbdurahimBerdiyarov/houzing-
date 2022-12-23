@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-import {ReactComponent as logoImg }  from '../../assets/icon/logo.svg'
+import { ReactComponent as logoImg } from "../../assets/icon/logo.svg";
 
 const Container = styled.div`
   display: flex;
@@ -12,47 +12,41 @@ const Container = styled.div`
 const Main = styled.div`
   display: flex;
   justify-content: center;
+
   background: var(--colorPrimary);
 `;
 
 const Wrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  color: #ffff;
+  padding: var(--padding);
+  height: 64px;
 
- background: var(--colorPrimary);
- color: #ffff;
- padding: var(--padding);
- height: 64px;
+  font-size: 16px;
 
- font-size: 16px;
-
- width: 100%;
- max-width: 1440px;
+  width: 100%;
+  /* max-width: 1440px; */
 `;
 
 const Section = styled.div`
   display: flex;
   align-items: center;
-  cursor: ${({ logo }) => logo && 'pointer'};
+  cursor: ${({ logo }) => logo && "pointer"};
 
-
-  .active{
+  .active {
     color: gray;
   }
-
-
-
 `;
 
 const Logo = styled(logoImg)`
-width: 30px;
-margin-right: 12px;
-& path {
+  width: 30px;
+  margin-right: 12px;
+  & path {
     fill: #ffff;
-}
-
+  }
 `;
 
 const Link = styled(NavLink)`
