@@ -25,7 +25,6 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 36px;
 
   text-align: center;
   letter-spacing: -0.02em;
@@ -49,4 +48,10 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #696969;
+}
+
+.inline {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
 }

@@ -1,49 +1,53 @@
 import { Container, Content, Details, Divider, Icon, Img } from "./style";
 import noimg from "../../assets/img/noimg.jpeg";
 
-export const HouseCard = ({
-  url,
-  title,
-  Beds,
-  Baths,
-  Carage,
-  Ruler,
-  Like,
-  info,
-}) => {
+export const HouseCard = ({ data = {} }) => {
+  const {
+    attachments,
+
+    salePrice,
+    price,
+    houseDetails,
+    address,
+    city,
+    country,
+    description,
+  } = data;
   return (
     <Container>
-      <Img src={url || noimg} />
+      <Img src={(attachments && attachments[0]?.imgPath) || noimg} />
       <Content>
-        <div className="subTitle">{title || "New Apartment Nice Wiew"}</div>
-        <div className="info">{info || "Quincy St, Brooklyn, NY, USA"}</div>
+        <div className="subTitle inline">
+          {city}, {country}, {description}
+        </div>
+        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"}</div>
         <Details>
           <Details.Item>
             <Icon.Beds />
-            <div className="info">Beds {Beds || 0}</div>
+            <div className="info">Beds {houseDetails?.beds || 0}</div>
           </Details.Item>
 
           <Details.Item>
             <Icon.Baths />
-            <div className="info">Baths {Baths || 0}</div>
+            <div className="info">Baths {houseDetails?.baths || 0}</div>
           </Details.Item>
 
           <Details.Item>
             <Icon.Carage />
-            <div className="info">Carage {Carage || 0}</div>
+            <div className="info">Carage {houseDetails?.garage || 0}</div>
           </Details.Item>
 
           <Details.Item>
             <Icon.Ruler />
-            <div className="info">Ruler {Ruler || 0}</div>
+            <div className="info">Ruler {houseDetails?.ruler || 0}</div>
           </Details.Item>
         </Details>
       </Content>
       <Divider />
       <Content footer>
         <Details.Item footer>
-          <div className="info">$2,800/mo</div>
-          <div className="subTitle">$7,500/mo</div>
+          <div className="info">${salePrice || 0}/mo</div>
+          <div className="subTitle">${price || 0}/mo</div>
         </Details.Item>
         <Details.Item row>
           <Icon.Resize />

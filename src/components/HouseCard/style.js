@@ -9,17 +9,19 @@ import { ReactComponent as Like } from "../../assets/icon/Like.svg";
 const Container = styled.div`
   width: 380px;
   height: 430px;
+  /* box-shadow: 0px, 0px, 15px, black;
+  margin-left: 20px;
+  margin-top: 25px; */
 
   filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
-
-  margin: 100px;
 `;
 
 const Img = styled.img`
   width: 100%;
   max-height: 220px;
+  min-height: 220px;
 `;
 
 const Content = styled.div`
@@ -34,6 +36,7 @@ const Content = styled.div`
 const Details = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 16px;
 `;
 
 Details.Item = styled.div`
@@ -64,8 +67,8 @@ Icon.Like = styled(Like)`
 `;
 
 const Divider = styled.div`
-  background: #e6e9ec;
-  height: 1px;
+  background: gray;
+  height: 0.5px;
   width: 100%;
 `;
 

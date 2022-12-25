@@ -37,14 +37,21 @@ const Container = styled.input`
   border-radius: 2px;
   min-width: 120px;
 
+  width: 200px;
+  height: 44px;
+
+  border: 1px solid black;
+
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "14px")};
   height: ${({ height }) => (height ? `${height}px` : "44px")};
   width: ${({ width }) => (width ? `${width}px` : "100%")};
   outline: none;
-  border: 1px solid #e6e9ec;
-  padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
-
   /* ${getType} */
+
+  padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
+  :focus {
+    border: 1px solid #0061df;
+  }
 `;
 
 const Wrapper = styled.div`

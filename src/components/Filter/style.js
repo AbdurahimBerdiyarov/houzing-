@@ -25,7 +25,7 @@ Icon.Advansed = styled(advansed)`
 
 const MenuWrapper = styled.div`
   padding: 30px;
-  background: "white";
+  background-color: white;
   border: 1px solid #e6e9ec;
 `;
 const Section = styled.div`
