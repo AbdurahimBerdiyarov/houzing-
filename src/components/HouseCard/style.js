@@ -7,11 +7,10 @@ import { ReactComponent as Resize } from "../../assets/icon/Resize.svg";
 import { ReactComponent as Like } from "../../assets/icon/Like.svg";
 
 const Container = styled.div`
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 330px;
   height: 430px;
-  /* box-shadow: 0px, 0px, 15px, black;
-  margin-left: 20px;
-  margin-top: 25px; */
 
   filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
@@ -21,7 +20,7 @@ const Container = styled.div`
 const Img = styled.img`
   width: 100%;
   max-height: 220px;
-  min-height: 220px;
+  min-height: 200px;
 `;
 
 const Content = styled.div`
@@ -54,12 +53,12 @@ Icon.Carage = styled(Carage)``;
 Icon.Ruler = styled(Ruler)``;
 Icon.Resize = styled(Resize)``;
 Icon.Like = styled(Like)`
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   padding: 6px;
   background: #f6f8f9;
   border-radius: 50%;
-  margin-left: 25px;
+  margin-left: 20px;
   cursor: pointer;
   :active {
     transform: scale(0.9);
@@ -67,8 +66,8 @@ Icon.Like = styled(Like)`
 `;
 
 const Divider = styled.div`
-  background: gray;
-  height: 0.5px;
+  background: #e6e9ec;
+  height: 1px;
   width: 100%;
 `;
 
