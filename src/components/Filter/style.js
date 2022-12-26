@@ -3,6 +3,8 @@ import { ReactComponent as houses } from "../../assets/icon/houses.svg";
 import { ReactComponent as advansed } from "../../assets/icon/advansed.svg";
 import { ReactComponent as search } from "../../assets/icon/search.svg";
 
+import { Select } from "antd";
+
 const Container = styled.div`
   display: flex;
   padding: var(--padding);
@@ -39,4 +41,19 @@ const Section = styled.div`
   gap: 20px;
 `;
 
-export { Container, Icon, MenuWrapper, Section };
+const SelectAnt = styled(Select)`
+  min-width: 200px;
+  width: 100;
+  max-width: 200px;
+
+  .ant-select-selector {
+    height: 44px !important;
+  }
+
+  .ant-select-selection-item {
+    display: flex !important;
+    align-items: center !important;
+  }
+`;
+
+export { Container, Icon, MenuWrapper, Section, SelectAnt };
