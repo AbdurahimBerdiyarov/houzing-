@@ -61,3 +61,7 @@ body {
   color: rgb(30, 28, 28) !important;
   font-size: 25px !important;
 }
+
+.slick-dots-bootom {
+  width: fit-content !important;
+}

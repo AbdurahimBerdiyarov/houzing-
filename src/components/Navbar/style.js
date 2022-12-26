@@ -37,7 +37,7 @@ const Section = styled.div`
   cursor: ${({ logo }) => logo && "pointer"};
 
   .active {
-    color: gray;
+    color: green;
   }
 `;
 
