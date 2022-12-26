@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Arrow, Blur, Container, Content, Img } from "./style";
-import { Carousel } from "antd";
+import React, { useEffect, useState } from "react";
+import { Container } from "./style";
+// import { Carousel } from "antd";
 import CategoryCard from "../CategoryCard";
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
