@@ -14,6 +14,7 @@ const Container = styled.div`
   padding: var(--padding);
   max-width: 1440px;
   width: 100%;
+  margin-top: 50px;
   margin: auto;
 `;
 

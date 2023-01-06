@@ -5,6 +5,7 @@ import Filter from "../Filter";
 import { Button } from "../Generic/Button";
 import { Container, Link, Logo, Main, Wrapper, Section } from "./style";
 import Footer from "../Footer";
+import SigninPage from "../../pages/Signin";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ export const Home = () => {
       <Filter />
       <Outlet />
       <Footer />
+      {/* <SigninPage /> */}
     </Container>
   );
 };
